@@ -1,34 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem 1.25rem;
-  /* align-content: flex-end; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 0.625rem;
+  /* justify-content: center; */
+  /* justify-content: space-evenly;*/
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
 }
 img {
-  height: 18.75rem;
-  width: 22rem;
-  border-radius: 0.625rem;
+  width: 22.5rem;
+  height: 20.5rem;
 }
-img:hover {
-  animation: change 15s ease-in-out;
-  animation-iteration-count: infinite;
-  border-radius: 1.625rem;
-  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
-    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
-    rgb(255, 85, 85) 0px 0px 0px 15px;
-  transform: scale(1.015);
-}
-@keyframes change {
-  0% {
-    opacity: 0.5;
-  }
-  25% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+
+#two {
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  /* grid-column: 2/4;  same as above */
+  /* grid-column: 2 / span 2; */
+  /* grid-row: 2/4; */
 }
